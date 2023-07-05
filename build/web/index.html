@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    body {
+        text-align: center;
+        align-items: center;
+    }
+
+    #d_top {
+        height: 10vh;
+        width: 100vw;
+        background-color: yellow;
+    }
+
+    #d_left {
+        width: 20vw;
+        height: 90vh;
+        padding: 1vh 0 0 0;
+       background: linear-gradient(to bottom,rgb(247, 165, 12),rgb(247, 181, 57),rgb(247, 202, 118));
+        display: inline-block;
+    }
+
+    #d_right {
+        width: 79%;
+        height: 90vh;
+        background-color: lightgoldenrodyellow;
+        display: inline-block;
+    }
+
+    iframe {
+        outline: none;
+        width: 80vw;
+        height: 90vh;
+        background-color: lightgoldenrodyellow;
+        display: inline-block;
+    }
+
+    h1 {
+        padding: 15px 0 0 0;
+    }
+
+    button {
+        background: linear-gradient(to left, rgb(45, 44, 44),
+         rgb(87, 87, 87), rgb(162, 158, 158));
+         color: cornsilk;
+         font-size:30px;
+        width: 15vw;
+        height: 20vh;
+        border: 3px solid red;
+        border-radius: 15px;
+    }
+</style>
+
+<body>
+    <div id="d_top">
+        <h1>CURD</h1>
+    </div>
+    <div id="d_left">
+        <button id="b1" onclick="btn1()">Add</button><BR></BR>
+        <button id="b2" onclick="btn2()">Edit</button><BR></BR>
+        <button id="b3" onclick="btn3()">Show</button><BR></BR>
+        <button id="b4" onclick="btn4()">Delete</button><BR></BR>
+
+    </div>
+    <div id="d_right"></div>
+
+    <script>
+
+
+        let div1 = document.getElementById("d_right")
+        function btn1() {
+            div1.innerHTML = "<iframe src='crt.html'></iframe>"
+        }
+        function btn2() {
+            div1.innerHTML = "<iframe src='upd.html'></iframe>"
+        }
+        function btn3() {
+            div1.innerHTML = "<iframe src='red.html'></iframe>"
+        }
+        function btn4() {
+            div1.innerHTML = "<iframe src='del.html'></iframe>"
+        }
+
+    </script>
+
+</body>
+
+</html>
