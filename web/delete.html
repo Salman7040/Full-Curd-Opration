@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body{
+            text-align: center;
+            align-items: center;
+        }
+</style>
+<body>
+    <form action="MyServletOne" method="get"  onsubmit="return che()">
+        <h1>Deleting Row Here.....!</h1>
+       Enter The Id   : <input type="Number" name="t1"  ><br><br>
+     <input type="hidden"  name="select" value="delete">
+        <input type="submit">
+          
+        
+    </form>
+    <script>
+    
+        let x = document.getElementsByName("t1");
+   
+
+        function che() {
+            if ( x[0].value == "" ){
+                alert("keep fill the Textbox...")
+                return false
+            }
+
+           
+        }
+
+    </script>
+</body>
+</html>

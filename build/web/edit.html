@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+    <body>
+        <form action="MyServletOne" method="get"  onsubmit="return che()">
+            <h1> Edit The  Row Here .....! </h1>
+
+            Enter The  Row  Id  : <input type="number" name="Edit_id"   ><br><br><br>
+
+            Enter New  Employee Id : <input type="text" name="t1"  ><br><br>
+            Enter New  Employee Name : <input type="text" name="t2"  ><br><br>
+            Enter New Employee Salary : <input type="number" name="t3"   ><br><br>
+            <input type="hidden"  name="select" value="edit">
+            <input type="submit">
+
+
+        </form>
+        
+        <script>
+        let a = document.getElementsByName("Edit_id");
+        let x = document.getElementsByName("t1");
+        let y = document.getElementsByName("t2");
+        let z = document.getElementsByName("t3");
+
+        function che() {
+            if ( x[0].value == "" ||  y[0].value == "" ||  z[0].value == ""  ||  a[0].value == "" ){
+                alert("keep fill the Textbox...")
+                return false
+            }
+
+           
+        }
+
+    </script>
+    </body>
+</html>
