@@ -19,7 +19,6 @@ public class MyServletOne extends HttpServlet {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-
             c1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbemp?zeroDateTimeBehavior"
                     + "=CONVERT_TO_NULL", "root", "root");
             st = c1.createStatement();
